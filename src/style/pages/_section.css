@@ -1,0 +1,78 @@
+.section {
+    display: flex;
+    padding: var(--spacing-xxl);
+    align-items: center;
+    gap: var(--spacing-md);
+    
+
+    & .section__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+    }
+
+    & .section__overline {
+        line-height: 0;
+        color: var(--color-title-trans);
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    & .section__title {
+        color: var(--color-title);
+        font-size: var(--font-size-xl);
+    }
+    
+    & .section__description {
+        margin-top: var(--spacing-md);
+        color: var(--color-body);
+        font-size: var(--font-size-md);
+    }  
+    
+    & .section__grid {
+        width: 60%;
+        container-type: inline-size;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+
+        margin: var(--spacing-xl) auto;
+
+   }
+
+   @media screen and (max-width: 78rem) {
+        margin-top: var(--spacing-xxl);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+
+
+        & .section__content {
+            min-width: 50%;
+        }
+
+        & .section__grid {
+            width: 90%;
+            gap: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+        }
+    
+}
+
+   @media screen and (max-width: 50rem) {
+
+        & .section__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@container (width < 35rem) {
+
+    .card--section {
+        flex-direction: column;
+        .card__image {
+            width: 100%;
+        };
+    }
+}

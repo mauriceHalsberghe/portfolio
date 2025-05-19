@@ -1,0 +1,19 @@
+.switch {
+    & .switch__icon {
+        animation: scaleUp 200ms ease;
+        aspect-ratio: 1;
+        width: var(--icon-size);
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+.switch--menu {
+    display: none;
+
+    @media screen and (max-width: 50rem) {
+        display: block !important;
+    }   
+    
+}
+

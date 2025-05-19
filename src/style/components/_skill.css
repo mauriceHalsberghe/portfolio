@@ -1,0 +1,21 @@
+.skill {
+    display: grid;
+    gap: var(--spacing-lg);
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin-right: var(--spacing-xl);
+
+    & .skill__card {
+        box-shadow: 0 3px 8px -3px black;
+        font-size: 8rem;
+        line-height: 0;
+        color: var(--color-primary-100);
+        background-color: var(--color-primary-200);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+    }
+
+    @media screen and (max-width: 78rem) {
+        margin: 0 auto
+    }
+}

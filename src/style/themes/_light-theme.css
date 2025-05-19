@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --color-primary-100: #00668c;
+    --color-primary-200: hsl(200, 80%, 80%);
+    --color-body: #1d1c1c;
+    --color-bg-shade: #fffefb;
+    --color-header: #e7f2fb;
+    --color-header-trans: #eef5fbae;
+    --color-title: #313d44;
+    --color-title-trans: #313d44a0;
+
+    --color-logo-100: #4ca6c9;
+    --color-logo-200: #267b9c;   
+}

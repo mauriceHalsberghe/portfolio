@@ -1,0 +1,35 @@
+.letter-m {
+    display: block;
+    transform: scale(0);
+    transform-origin:80px 50%;
+    animation: scaleIn 200ms ease-in-out 200ms forwards;
+}
+.letter-h {
+    display: block;
+    opacity: 0;
+    animation: slideIn 800ms ease forwards 300ms;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-44.7%);
+        opacity: 0;
+    }
+    60% {
+        transform:translateX(5%);
+        opacity: 1;
+    }
+    100% {
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

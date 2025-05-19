@@ -1,0 +1,30 @@
+.alert[popover] {
+    margin: var(--header-height) var(--spacing-md);
+    left: auto;
+    background-color: var(--color-primary-200);
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--color-title);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    box-shadow: 0 5px 5px -5px black;
+
+    opacity: 0;
+    transform: translateX(100%);
+
+    transition-property: transform, opacity;
+    transition: 250ms ease-in-out allow-discrete;
+}
+
+.alert[popover]:popover-open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@starting-style {
+    .alert[popover]:popover-open {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}

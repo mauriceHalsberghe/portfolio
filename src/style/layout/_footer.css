@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-xxl);
+    background-color: var(--color-header);
+
+    & .footer__content {
+
+        & .footer__title {
+            color: var(--color-title);
+        }
+        
+        & .footer__subtext {
+            color: var(--color-title-trans);
+        }
+    }
+
+    @media screen and (max-width: 78rem) {
+        justify-content: space-between;
+        padding: var(--spacing-sm) var(--spacing-xl);
+    }
+
+    @media screen and (max-width: 50rem) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+}

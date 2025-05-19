@@ -1,0 +1,88 @@
+@import url('./base/_reset.css');
+
+@import url('./abstracts/_variables.css');
+
+@import url('./components/_button.css');
+@import url('./components/_switch.css');
+@import url('./components/_socials.css');
+@import url('./components/_card.css');
+@import url('./components/_project-image.css');
+@import url('./components/_dialog.css');
+@import url('./components/_alert.css');
+@import url('./components/_carousel.css');
+@import url('./components/_skill.css');
+
+@import url('./layout/_header.css');
+@import url('./layout/_nav.css');
+@import url('./layout/_contact-form.css');
+@import url('./layout/_footer.css');
+
+@import url('./pages/_hero.css');
+@import url('./pages/_section.css');
+@import url('./pages/_details.css');
+
+@import url('./themes/_light-theme.css');
+@import url('./themes/_dark-theme.css');
+/* Animations */
+@import url('./base/animations/_line.css');
+@import url('./base/animations/_logo.css');
+@import url('./base/animations/_scale-in.css');
+@import url('./base/animations/_hero-title.css');
+
+html,body {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+body {
+  font-family: 'Roboto'; 
+  background-color: var(--color-bg-shade);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  scroll-timeline: --squareTimeline y;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hidden {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-skip {
+  position: fixed;
+  left: -9999px;
+  top: 0  ;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-sm);
+  font-size: var(--font-size-md);
+  opacity: 0;
+  color: black;
+  background-color: #fee750;
+  z-index: 999;
+}
+
+.nav-skip:focus {
+  opacity: 1;
+  left: 0;
+}

@@ -1,0 +1,43 @@
+.button {
+    color: var(--color-bg-shade);
+    background-color: var(--color-primary-100);
+    font-size: var(--font-size-md);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    border: 2px var(--color-primary-100) solid;
+    width: max-content;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition: ease 250ms;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-100);
+
+    transition-property: background-color, color;
+    transition: ease 250ms;
+}
+
+.button--header {
+    color: var(--color-primary-100);
+    background-color: transparent;
+    &:hover {
+        background-color: var(--color-primary-100);
+        color: var(--color-bg-shade);
+    }
+}
+
+.button--hero,
+.button--section {
+    margin-top: var(--spacing-xl);
+}
+
+.button--back {
+    position: fixed;
+    height: fit-content;
+    inset: 0;
+    top: var(--header-height);
+    margin: var(--spacing-sm);
+    z-index: 99 ;
+}

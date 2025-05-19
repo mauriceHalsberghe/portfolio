@@ -1,0 +1,33 @@
+.socials {
+
+    display: flex;
+    margin: auto;
+    gap: var(--spacing-lg);
+}
+
+.socials__link {
+    width: var(--spacing-xl);
+}
+
+.socials__icon {
+    &:hover {
+        
+        path {
+            transition: fill 200ms ease;
+            fill: var(--color-primary-100);
+        }
+    }
+
+    path {
+        transition: fill 200ms ease;
+    }
+}
+
+.socials--footer {
+    margin: 0;
+    gap: var(--spacing-md);
+
+    .socials__link {
+        width: 40px;
+    }
+}

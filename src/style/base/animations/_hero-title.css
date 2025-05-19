@@ -1,0 +1,37 @@
+.hero__title--name {
+    color: var(--color-title);
+    font-size: var(--font-size-xl);
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+
+
+    & .word {
+      min-width: fit-content;
+    }
+  
+    & .char {
+      display: inline-block;
+      transition: all 400ms ease;
+      color: var(--color-title);
+      font-variation-settings: 'wght' 300, 'wdth' 100;
+      cursor: default;
+
+      &:hover {
+        font-variation-settings: 'wght' 900, 'wdth' 100;
+      }
+
+      &:hover + .char {
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+      }
+
+      &:has(+ .char:hover) {
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+      }
+
+      &:hover + .char + .char {
+        font-variation-settings: 'wght' 500, 'wdth' 100;
+      }
+    }
+
+    
+  }

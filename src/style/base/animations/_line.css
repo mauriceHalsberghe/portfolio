@@ -1,0 +1,12 @@
+.squiggle {
+    display: flex;
+    stroke-dasharray: 7400;
+    stroke-dashoffset: 7400;
+    animation: drawAnim 3s forwards linear;
+}
+
+@keyframes drawAnim {
+    to {
+      stroke-dashoffset: 0;
+    }
+}

@@ -1,0 +1,14 @@
+
+body.dark-mode {
+    --color-primary-100: #cee8ff;
+    --color-primary-200: #3D5A80;
+    --color-body: #FFFFFF;
+    --color-bg-shade: #0F1C2E;
+    --color-header: #1f2b3e;
+    --color-header-trans: #1f2b3e8e;
+    --color-title: #e0e0e0;
+    --color-title-trans: #e0e0e080;
+
+    --color-logo-100: #cee8ff;
+    --color-logo-200: #92b3cf;
+}

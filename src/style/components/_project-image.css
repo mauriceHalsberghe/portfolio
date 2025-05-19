@@ -1,0 +1,26 @@
+.project-image {
+    position: relative;
+    max-width: 800px;
+    cursor: none;
+}
+
+.project-image__dark {
+    z-index: 2;
+    
+}
+
+.project-image__light {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    mask-image: radial-gradient(circle, black 30%, transparent 54%);
+    mask-repeat: no-repeat;
+    -webkit-mask-image: radial-gradient(circle, black 30%, transparent 40%);
+    -webkit-mask-repeat: no-repeat;
+    
+    opacity: 0;
+    transition: opacity 500ms ease;
+    &:hover {
+        opacity: 1;
+    };
+}

@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 var(--spacing-xl);
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    z-index: 10;
+
+    background-color: var(--color-bg-shade);
+
+    animation: headerScroll;
+    animation-duration: 1s;
+    animation-timeline: scroll();
+
+    & .header__logo {
+        height: 3rem;
+        max-width: fit-content;
+    }
+
+    & .header__buttons {
+        display: flex;
+        gap: var(--spacing-sm);
+    }
+
+    @media screen and (max-width: 78rem) {
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 36rem) {
+        padding: 0 var(--spacing-md);
+    }
+    
+}
+
+@keyframes headerScroll {
+    to {
+        background-color: var(--color-header-trans);
+        backdrop-filter: blur(5px);
+    }
+}
+
+

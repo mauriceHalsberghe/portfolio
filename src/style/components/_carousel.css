@@ -1,0 +1,55 @@
+.carousel {
+  position: relative;
+}
+
+.carousel__slides {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+.carousel__slide {
+    max-width: 800px;
+    display: none;
+}
+  
+  .carousel__slide.active {
+    display: block;
+}
+
+.next,
+.previous {
+  position: absolute;
+  font-size: var(--font-size-xl);
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary-100);
+  z-index: 999;
+  top: 50%;
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+@media screen and (max-width: 78rem) {
+  .previous {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .next,
+.previous {
+  top: 100%;
+}
+}

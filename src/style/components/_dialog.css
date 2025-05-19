@@ -1,0 +1,46 @@
+.dialog {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+    & .dialog__window {
+        max-width: 40rem;
+        background-color: var(--color-header);
+        border-radius: var(--border-radius);
+        color: var(--color-title);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: var(--spacing-lg);
+    }
+
+    & .dialog__title {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--spacing-md);
+    }
+
+    & .dialog__text {
+        font-size: var(--font-size-md);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    @media screen and (max-width: 50rem) {
+        & .dialog__window {
+
+            padding: var(--spacing-lg);
+
+            top: 50%;
+            left: 10%;
+            transform: translate(-5%, -50%);
+        }
+        
+    }
+}
+
